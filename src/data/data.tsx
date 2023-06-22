@@ -6,6 +6,8 @@ import MasalaDosa from "../images/masala.jpg";
 import Paneer from "../images/paneer.jpg";
 import Gujrati from "../images/gujrati.jpeg";
 
+
+// MenuList
 export const MenuList = [
   {
     name: "Dosa",

@@ -107,6 +107,15 @@ const Header: React.FC<HeaderProps> = () => {
                 <li>
                   <NavLink to={"/contact"}>Contact</NavLink>
                 </li>
+                <li>
+                  <NavLink to={"/login"}>Logout</NavLink>
+                </li>
+                {/* <li>
+                  <NavLink to={"/signup"}>SignUp</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/login"}>Logout</NavLink>
+                </li> */}
               </ul>
             </Box>
           </Toolbar>
@@ -128,7 +137,7 @@ const Header: React.FC<HeaderProps> = () => {
             {drawer}
           </Drawer>
         </Box>
-        
+
         <Box sx={{ p: 1 }}>
           <Toolbar />
         </Box>
