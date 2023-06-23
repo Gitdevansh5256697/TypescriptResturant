@@ -28,11 +28,19 @@ import bcrypt from "bcryptjs";
 const defaultTheme = createTheme();
 
 export default function SignUp() {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async(event: React.FormEvent<HTMLFormElement>) => {
+    const saltRounds = 10;
+      const salt = await bcrypt.genSalt(saltRounds);
+      const hash = await bcrypt.hash(password, salt);
+      // Use the hashed password (hash) as needed
+      // console.log('Hashed password:', hash);
+      //////////////////////////
+      const encryptedPassword = JSON.stringify(hash);
     event.preventDefault();
-    let regobj = { id, name, password, email };
+    let regobj = { id, name,password: encryptedPassword, email };
     // const data = new FormData(event.currentTarget);
     console.log(regobj);
+    // return
     //Fetch Api for SignUp
     fetch("http://localhost:8000/user", {
       method: "POST",

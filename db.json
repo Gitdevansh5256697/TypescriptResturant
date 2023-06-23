@@ -161,6 +161,12 @@
       "name": "admir",
       "password": "admir",
       "email": "admir@gmail.com"
+    },
+    {
+      "id": "ww",
+      "name": "ww",
+      "password": "\"$2a$10$g7wSZ7O79GYjOVk.LNTekePxHwiZ1CNEsL0z.VqyJaOsDhHmYW9e6\"",
+      "email": "ww@gmail.com"
     }
   ]
 }
